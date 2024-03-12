@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link href="{{ url_for('static', filename='dist/kioskboard-2.3.0.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='dist/homeuistyle.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='dist/feedbackstyle.css') }}" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/86aee6cc9c.js" crossorigin="anonymous"></script>
+  <title>SebastyUI</title>
+  <style>
+    :root{
+    --red: #8a0000;
+    --lred: #8a0000b0;
+    --black: #000000;
+    --brown: #ded7c4;
+    --white: #ffffff;
+    --cream: #ede9df;
+    --bgcolor: #00000066;
+    --yellow: #ffbd13;
+    }
+    .chat-container {
+            width: 700px;
+            margin-left: 140px;
+            padding: 20px;
+            border: 5px solid var(--lred);
+            border-radius: 8px;
+            height: 400px; /* Set a fixed height for the container */
+            overflow-y:auto; /* Enable vertical scrolling */
+
+    }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f1f0f0;
+        }
+        .user-message {
+            background-color: #8a0000b0;
+            align-self: flex-end;
+            color: white;
+        }
+        .chat-form {
+            position: absolute;
+            top: 80%;
+            border-radius: 40px;
+            padding: 11.25px;
+            margin: 40px;
+            margin-left: 75px;
+            display: flex;
+            align-items: center;
+            background: #bdb7a7;
+            width: 650px;
+            box-shadow: var(--shadow);
+        }
+        .chat-form input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            margin-left: auto;
+            outline: none;
+            border: none;
+            background: transparent;
+        }
+        .chat-form input[type="submit"] {
+            width: 18%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #8a0000;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: auto;
+        }
+        .chat-form input[type="submit"]:hover {
+            background-color: #8a0000b0;
+        }
+         
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+        <img class="logo" src="{{ url_for('static', filename='pictures/LOGO.png') }}" alt="Logo">
+        <a href="#home"><i class="fa-solid fa-comments"></i></i>Info Hub</a>
+            <a href="#about"><i class="fa-solid fa-circle-info"></i>About</a>
+            <a href="#FAQ"><i class="fa-solid fa-circle-question"></i>FAQs</a>
+            <a href="#feedback"><i class="fa-regular fa-star-half-stroke"></i>Feedback</a>
+            <a class="back" onclick="location.href='/SEBASTYINDEX'"><i class="fa-solid fa-house"></i>BACK</a>
+    </div>
+</header>
+
+<section class="section InfoHub" id="home">
+    <h2>Information Hub</h2>
+    <div class="convos">
+        <div class="chat-container" id="chatContainer">
+            <div class="message">Hello! How can I help you?</div>
+        </div>
+    </div>
+    <form class="chat-form" onsubmit="sendMessage(event)">
+        <input type="text" id="messageInput" placeholder="Type your message..."
+                class="js-kioskboard-input" 
+                data-kioskboard-type="keyboard" 
+                data-kioskboard-placement="bottom" 
+                data-kioskboard-specialcharacters="false">
+        <input type="submit" value="Send">
+    </form>
+</section>
+
+<section class="section About" id="about">
+    <h2>About Sebasty</h2>
+        <div class="AboutP">
+            <p>Sebasty originates from the Sebastian Identity, where 'Sebastian' represents core values of truth and community. Sebasty serves as a user-friendly robot designed for customer service and marketing initiatives.</p>
+            <p>The name of Sebasty came from the combination of the word Sebastinian and Identity because of the name of our instuition San Sebastian college and we also used sebasty so that we will able to promote our school. It is an Al supported robot capable of providing information, collecting feedback, and promoting the school.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p></div>
+</section>
+
+<section class="section FAQ" id="FAQ">
+    <div class="tops">
+        <h2>FAQs Section</h2>
+    </div>
+    <div class="FAQps">   
+        <div class="img-box">
+            <img src="{{ url_for('static', filename='pictures/faqs.png') }}" alt="FAQS">
+        </div>
+        <div class="qtext">
+            <div class="title">Questions</div>
+        <ul class="faqs-text">
+            <li>
+                <div class="questions-list">
+                    <span class="questions">What is the admission process?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <span class="line"></span>
+            </li>
+            <li>
+                <div class="questions-list">
+                    <span class="questions">How can parents stay involved and communicate with the school?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, explicabo!</p>
+                <span class="line"></span>
+            </li>            <li>
+                <div class="questions-list">
+                    <span class="questions">What extracurricular activities and clubs does the school offer?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, nesciunt?</p>
+                <span class="line"></span>
+            </li>            <li>
+                <div class="questions-list">
+                    <span class="questions">What academic support services and resources are available for students?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quod nostrum doloribus commodi temporibus possimus fuga iusto at ea rerum?</p>
+                <span class="line"></span>
+            </li>            <li>
+                <div class="questions-list">
+                    <span class="questions">What are the school's policies regarding attendance, behavior, and dress code?</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium minima officiis beatae ex esse atque quia ipsum, ducimus voluptate dignissimos dolores odit minus tempora laborum quibusdam, aliquid tenetur, dolorum totam!</p>
+                <span class="line"></span>
+            </li>
+            </ul>
+        </div>
+        </div>
+</section>
+
+<form action="/survey" id="survey_form" class="form1" method="post">
+    <section class="feedback wrapper" id="feedback">
+        <fieldset>
+            <legend>Feedback Form</legend>
+            <div class="NameandDep">
+                <div class="name">
+                    <p>Name:</p>
+                    <input type="text" 
+                           placeholder="Optional..." 
+                           name="name"
+                           placeholder="Your opinion..."
+                           class="js-kioskboard-input" 
+                           data-kioskboard-type="keyboard" 
+                           data-kioskboard-placement="bottom" 
+                           data-kioskboard-specialcharacters="false">
+                </div>
+    
+                <div class="department">
+                    <p>Your Department:</p>
+                    <select name="There_Department" id="There_Department">
+                        <option value="Not Specified">Select Here...</option>
+                        <option value="Nursing">Institute of Nursing</option>
+                        <option value="Engineering">Engineering Department</option>
+                        <option value="IT">IT Department</option>
+                        <option value="Criminology">Criminology Department</option>
+                        <option value="Business">Business and Accountancy Department</option>
+                        <option value="Psychology">Psychology Department</option>
+                        <option value="SeniorHigh">Senior High School Department</option>
+                        <option value="Communication">Communication Department</option>
+                        <option value="Teaching">Teaching Personnel</option>
+                        <option value="NonTeaching">Non-Teaching Personnel</option>
+                        <option value="Administrators">Lay administrators</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Tourism">Tourism Management</option>
+                        <option value="Hospitality">Hospitality Management</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="containertargetdepartment">
+                    <div class="targetdep">
+                        <p>Your Target Facility:</p>
+                        <select name="There_TDepartment" id="There_TDepartment">
+                            <option value="Not Specified">Select Here...</option>
+                            <option value="Chemistry">Laboratory – Chemistry</option>
+                            <option value="Complab">Laboratory – Complab Remote</option>
+                            <option value="Computer">Laboratory – Computer Center</option>
+                            <option value="Speech">Laboratory – Speech</option>
+                            <option value="CompEng">Laboratory – Computer Engineering</option>
+                            <option value="ElecEng">Laboratory – Electronics Engineering</option>
+                            <option value="HRM">Laboratory – Hotel and Restaurant Management</option>
+                            <option value="ITM">Laboratory – ITM / Baitech</option>
+                            <option value="MassComm">Laboratory – Mass Communication</option>
+                            <option value="MechEng">Laboratory – Mechanical Engineering</option>
+                            <option value="Nursing">Laboratory – Nursing Skills</option>
+                            <option value="Physics">Laboratory – Physics</option>
+                            <option value="Psychology">Laboratory – Psychology</option>  
+                            <option value="VPAdmin">Office of the VP for Administration/CHRMD</option>
+                            <option value="CICT">Center for Information and Communications Technology</option>
+                            <option value="LMS">Learning Management System Office</option>
+                            <option value="SchoolPresident">Office of the School President</option>
+                            <option value="ExecSec">Executive Secretary</option>
+                            <option value="CIQEM">Center for Institutional Effectiveness and Quality Management</option>
+                            <option value="CorpComm">Center for Corporate Communications</option>
+                            <option value="Alumni">Office for Alumni Relations/Internship Coordinator</option>
+                            <option value="VPFinance">Office of the VP for Finance</option>
+                            <option value="Accounting">Accounting Office</option>
+                            <option value="Facilities">Office for Facilities and Management and General Administrative Services</option>
+                            <option value="Auditor">Auditor's Office</option>
+                            <option value="Bookstore">Bookstore</option>
+                            <option value="VPIdentity">Office of the VP for Identity, Formation and Mission/RE-COP</option>
+                            <option value="CampusMinistry">Office for Campus Ministry</option>
+                            <option value="StudentAffairs">Office for Student Affairs and Services</option>
+                            <option value="StudentCenter">Student Development and Placement Center</option>
+                            <option value="MedicalClinic">Medical Clinic</option>
+                            <option value="DentalClinic">Dental Clinic</option>
+                            <option value="VPAcademics">Office of the VP for Academics and Research</option>
+                            <option value="Registrar">School Registrar</option>
+                            <option value="Research">Center for Research and Creative Works</option>
+                            <option value="LearningCenter">St. Thomas of Villanova Learning Resource Center (Library)</option>
+                            <option value="CollegeDean">Office of the College Dean</option>
+                            <option value="SHSPrincipal">Office of the Senior High School Principal</option>
+                            <option value="Admission">Office for Admission and Scholarship</option>
+
+        
+                        </select>
+                    </div>
+                    <div class="ratecontainer">
+                        <p>How would you rate them?</p>
+                        <div class="rating2" >
+                            <input value="5" name="department_rating" id="star5" type="radio" required>
+                            <label for="star5"></label>
+                            <input value="4" name="department_rating" id="star4" type="radio" required>
+                            <label for="star4"></label>
+                            <input value="3" name="department_rating" id="star3" type="radio" required>
+                            <label for="star3"></label>
+                            <input value="2" name="department_rating" id="star2" type="radio" required>
+                            <label for="star2"></label>
+                            <input value="1" name="department_rating" id="star1" type="radio" required>
+                            <label for="star1"></label>
+                        </div> 
+                    </div>
+            </div>
+            
+            <textarea id="textarea" 
+                      class="textarea js-kioskboard-input" 
+                      name="suggestion" 
+                      cols="30" 
+                      rows="5" 
+                      placeholder="Your opinion..."
+                      data-kioskboard-type="keyboard" 
+                      data-kioskboard-placement="top" 
+                      data-kioskboard-specialcharacters="false" ></textarea>
+            <div class="btn-group2">
+                <button type="button" class="btn submit2" onclick="showNextSection()">Next</button>
+                <button type="button" class="btn cancel2" onclick="location.href='/SEBASTYINDEX'">Cancel</button>
+            </div>
+        </fieldset>
+    </section>
+    
+    <div class="schoolrate">
+        <section class="section SebR" id="SSrating" style="display: none;">
+            <div class="sebBox">
+                <div class="seb content">
+                    <h1>How do you rate San Sebastian?</h1>
+                    <div class="rating1" >
+                        <input value="5" name="schoolrating" id="star5_school" type="radio" required>
+                        <label for="star5_school"></label>
+                        <input value="4" name="schoolrating" id="star4_school" type="radio" required>
+                        <label for="star4_school"></label>
+                        <input value="3" name="schoolrating" id="star3_school" type="radio" required>
+                        <label for="star3_school"></label>
+                        <input value="2" name="schoolrating" id="star2_school" type="radio" required>
+                        <label for="star2_school"></label>
+                        <input value="1" name="schoolrating" id="star1_school" type="radio" required>
+                        <label for="star1_school"></label>
+                    </div>
+                    <div class="btn-group1">
+                        <button type="submit" class="btn submit1">Submit</button>
+                        <button type="button" class="btn cancel1" onclick="showPreviousSection()">Back</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    </div>    
+  </form>  
+
+  <!-- FAQS -->
+  <script>
+    let li = document.querySelectorAll(".faqs-text li");
+    for (var i = 0; i < li.length; i++){
+        li[i].addEventListener("click", (e)=>{
+            let clickedLi;            
+            if(e.target.classList.contains("questions-list")){
+                clickedLi = e.target.parentElement; 
+            }else {
+                clickedLi = e.target.parentElement.parentElement;
+            }
+            clickedLi.classList.toggle("showAnswer");
+        })
+    }
+  </script>
+
+  <script>
+    function showNextSection() {
+        document.getElementById("feedback").style.display = "none";
+        document.getElementById("SSrating").style.display = "flex ";
+    }
+  
+    function showPreviousSection() {
+        document.getElementById("feedback").style.display = "flex";
+        document.getElementById("SSrating").style.display = "none";
+    }
+  
+    function cancelForm() {
+        document.getElementById("feedbackForm").reset();
+        document.getElementById("feedback").style.display = "flex";
+        document.getElementById("SSrating").style.display = "none";
+    }
+  </script>
+
+<script src="{{ url_for('static', filename='dist/kioskboard-2.3.0.min.js') }}"></script>
+
+<script>
+    function sendMessage(event) {
+            event.preventDefault();
+            var messageInput = document.getElementById("messageInput");
+            var messageText = messageInput.value.trim();
+            
+            if (messageText !== "") {
+                var messageContainer = document.createElement("div");
+                messageContainer.classList.add("message", "user-message");
+                messageContainer.textContent = messageText;
+                document.getElementById("chatContainer").appendChild(messageContainer);
+                messageInput.value = "";
+                // Scroll to the bottom of the chat container
+                document.getElementById("chatContainer").scrollTop = document.getElementById("chatContainer").scrollHeight;
+
+                // Send message to the server
+                fetch("/send_message", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: "message=" + encodeURIComponent(messageText)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    var responseContainer = document.createElement("div");
+                    responseContainer.classList.add("message");
+                    responseContainer.textContent = data.response;
+                    document.getElementById("chatContainer").appendChild(responseContainer);
+                    // Scroll to the bottom of the chat container after receiving response
+                    document.getElementById("chatContainer").scrollTop = document.getElementById("chatContainer").scrollHeight;
+                })
+                .catch(error => {
+                    console.error("Error:", error);
+                });
+            }
+        }
+</script>
+<script>
+    window.onload = function() {
+
+    var select1 = document.getElementById('There_Department');
+    sortSelect(select1);
+
+    var select2 = document.getElementById('There_TDepartment');
+    sortSelect(select2);
+    };
+
+    function sortSelect(select) {
+    var options = select.getElementsByTagName('option');
+    
+    // Remove the "Select Here..." option temporarily
+    var selectHereOption = select.querySelector('option[value="Not Specified"]');
+    var selectHereOptionSelected = selectHereOption.selected;
+    select.removeChild(selectHereOption);
+    
+    // Sort the remaining options alphabetically
+    var sortedOptions = Array.from(options).sort(function(a, b) {
+        return a.text.localeCompare(b.text);
+    });
+    
+    // Add the "Select Here..." option back at the beginning
+    var selectHereOptionClone = selectHereOption.cloneNode(true);
+    select.insertBefore(selectHereOptionClone, select.firstChild);
+    
+    // Append the sorted options after the "Select Here..." option
+    for (var i = 0; i < sortedOptions.length; i++) {
+        select.appendChild(sortedOptions[i]);
+    }
+
+    // Select "Select Here..." option if it was originally selected
+    if (selectHereOptionSelected) {
+        select.selectedIndex = 0;
+    }
+};
+</script>
+
+<script>
+
+    var enkey = [
+    {
+      "0": "Q",
+      "1": "W",
+      "2": "E",
+      "3": "R",
+      "4": "T",
+      "5": "Y",
+      "6": "U",
+      "7": "I",
+      "8": "O",
+      "9": "P"
+    },
+    {
+      "0": "A",
+      "1": "S",
+      "2": "D",
+      "3": "F",
+      "4": "G",
+      "5": "H",
+      "6": "J",
+      "7": "K",
+      "8": "L"
+    },
+    {
+      "0": "Z",
+      "1": "X",
+      "2": "C",
+      "3": "V",
+      "4": "B",
+      "5": "N",
+      "6": "M"
+    }
+    ];
+    KioskBoard.run('.js-kioskboard-input', {
+      keysArrayOfObjects: enkey,
+      language: 'en',
+      autoScroll: false,
+      Capslock: true,
+      allowRealKeyboard: true,
+      allowMobileKeyboard: true,
+      cssAnimations: true,
+      cssAnimationsDuration: 260,
+
+      theme: 'dark',  
+      keysFontSize: '20px',
+      keysFontWeight: 'bold',
+      keysIconSize: '20px',
+
+      keysEnterText: 'Enter',
+    });
+</script>
+
+</body>
+</html>

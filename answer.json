@@ -1,0 +1,1164 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day",
+        "Whats up",
+        "Hey",
+        "greetings"
+      ],
+      "responses": [
+        "Hello!",
+        "Good to see you again!",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "pagbati",
+      "patterns": [
+        "Kumusta?",
+        "Kamusta?",
+        "hai",
+        "Magandang umaga",
+        "Mas maganda ka pa sa umaga"
+      ],
+      "responses": [
+        "Kumusta?",
+        "Kamusta?",
+        "hai",
+        "Magandang umaga",
+        "Mas maganda ka pa sa umaga"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you!",
+        "Thanks a lot",
+        "Appreciate it",
+        "Thanks for your help"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "Glad I could assist!",
+        "Anytime!",
+        "Happy to help!",
+        "You're welcome! If you have any more questions or need further assistance, feel free to ask. I'm here to help!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "cya",
+        "See you later",
+        "Goodbye",
+        "I am Leaving",
+        "Have a Good day",
+        "bye",
+        "cao",
+        "see ya"
+      ],
+      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+      "context_set": ""
+    },
+    {
+      "tag": "inquiry",
+      "patterns": [
+        "I have a question",
+        "Can you answer something for me?",
+        "I'm curious about"
+      ],
+      "responses": [
+        "Sure, go ahead and ask your question.",
+        "Of course, I'm here to help with any questions you have.",
+        "Feel free to ask me anything you'd like to know."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "help",
+      "patterns": ["Help", "I need assistance", "Can you help me?"],
+      "responses": [
+        "Sure, I'm here to help! What do you need assistance with?",
+        "Of course! What can I assist you with?",
+        "Absolutely! Let me know what you need help with."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "developer",
+      "patterns": [
+        "Who developed this?",
+        "Who created this?",
+        "Who is the developer?",
+        "Who built this application?",
+        "Who is behind this project?",
+        "Who coded this?",
+        "Who is responsible for this?",
+        "Who is the creator?",
+        "Who designed this?",
+        "Who is the team behind this?"
+      ],
+      "responses": [
+        "The developer of Sebasty. Their team includes Jurado, Luig, Brillantes, Gaylon, and Jaguit."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "stocks",
+      "patterns": [
+        "What are my stocks?",
+        "Which stocks do I own?",
+        "Show my stock portfolio"
+      ],
+      "responses": ["Here are your stocks!"],
+      "context_set": ""
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "Where can I give my feedback about the school?",
+        "I want to give feedback",
+        "I have a comment",
+        "feedback"
+      ],
+      "responses": [
+        "You can give it to me! Kindly click on the \"Feedback\" section at the top right corner of the screen, fill out the form, and submit it. I will process it so that it reaches the administration. Alternatively, you can go to the department you have concerns with and inform the officer in charge about the concerns you have."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "Where can I get details about the events of the school?",
+        "Events",
+        "Details of the Event",
+        "Announcement"
+      ],
+      "responses": [
+        "You can see event details or announcements on the official social media accounts of San Sebastian College - Recollectos de Cavite. Just search San Sebastian College - Recollectos de Cavite on Facebook to look at their main page and see if there are any posted details. You can also search for the following sites depending on your concern:\n\nIDENTITY, FORMATION AND MISSION DIVISION:\n- Baste Cavite - Student affairs\n- Baste Cavite - Campus Ministry Office\n- Baste Cavite - Student Development and Placement Center\n- Baste Cavite - Health Services\n\nACADEMIC AND RESEARCH:\n- Baste Cavite - Registrar\n- Baste Cavite - Admission and Scholarships\n- Baste Cavite - Cañacao Campus\n- Baste Cavite - Senior High School\n- Baste Cavite - Office of the College Dean\n- Baste Cavite - Graduate School\n- Baste Cavite - Libraries\n- Baste Cavite - CRCW\n- Baste Cavite - LMS\n\nFINANCE DIVISION:\n- Baste Cavite - Finance\n- Baste Cavite - Bookstore"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "no",
+      "patterns": ["No"],
+      "responses": [
+        "Is there anything else I can assist you with?",
+        "Alright. Let me know if you need further help.",
+        "Okay. Feel free to ask if you have any other questions."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "not_satisfied",
+      "patterns": [
+        "That's not right",
+        "That's not what I want",
+        "No",
+        "Not what I'm looking for"
+      ],
+      "responses": [
+        "I'm sorry to hear that. Could you please rephrase your question or provide more details?",
+        "Apologies for the misunderstanding. Can you try asking again using different words?",
+        "Understood. Feel free to ask again in a different way."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "questions",
+      "patterns": [
+        "Where can I ask questions and inquiries?",
+        "How can I get information about SSCRdC?",
+        "Where can I seek assistance?",
+        "How do I find answers to my questions?"
+      ],
+      "responses": [
+        "You can ask me anything about SSCRdC. While I may be incomplete with details, I will do my best to answer your questions. Alternatively, you can directly ask the officer in charge of the department in concern or message their Facebook account.\n\nIDENTITY, FORMATION AND MISSION DIVISION:\n- Baste Cavite - Student affairs\n- Baste Cavite - Campus Ministry Office\n- Baste Cavite - Student Development and Placement Center\n- Baste Cavite - Health Services\n\nACADEMIC AND RESEARCH:\n- Baste Cavite - Registrar\n- Baste Cavite - Admission and Scholarships\n- Baste Cavite - Cañacao Campus\n- Baste Cavite - Senior High School\n- Baste Cavite - Office of the College Dean\n- Baste Cavite - Graduate School\n- Baste Cavite - Libraries\n- Baste Cavite - CRCW\n- Baste Cavite - LMS\n\nFINANCE DIVISION:\n- Baste Cavite - Finance\n- Baste Cavite - Bookstore"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "president",
+      "patterns": [
+        "Who is the head of the school?",
+        "Who leads the school?",
+        "Who is the top official of the school?"
+      ],
+      "responses": ["REV. FR. RAFAEL B. PECSON, OAR"],
+      "context_set": ""
+    },
+    {
+      "tag": "dean",
+      "patterns": [
+        "Who is the College Dean?",
+        "Who is in charge of the college?",
+        "Who oversees the college?"
+      ],
+      "responses": ["JENNIFER B. ESCOBAR, MAT"],
+      "context_set": ""
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where is San Sebastian College - Recoletos de Cavite located?",
+        "Can you tell me the address of SSCRdC?",
+        "What is the location of SSCRdC?",
+        "Where is the Canacao Campus?",
+        "Where is the Cañacao Campus?"
+      ],
+      "responses": [
+        "Main Campus: Manila-Cavite Road, Sta. Cruz, Cavite City, 4100, Philippines\nCañacao Campus: Padre Burgos St., Bo. Rosario, San Roque, Cavite City, 4100, Philippines"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "gymnasium",
+      "patterns": [
+        "Where is gymnasium?",
+        "Can you tell me the location of the gymnasium?",
+        "How do I get to the gymnasium?"
+      ],
+      "responses": [
+        "You can find the gymnasium at the Cañacao Campus located on Padre Burgos St., Bo. Rosario, San Roque, Cavite City, 4100, Philippines. If you plan to take a jeepney to get there, look for the one with a 'PN' placard."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "Where can I pay my tuition?",
+        "How do I settle my tuition?",
+        "Where is the tuition fee payment?",
+        "Where can I pay for my fees",
+        "Payment fee",
+        "Where to pay"
+      ],
+      "responses": [
+        "You can pay your tuition fee or other fees at the cashier located in the Saint Augustine Lobby or SA Lobby."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tuition",
+      "patterns": [
+        "Where can I see how much my tuition is?",
+        "How do I check my tuition fee?",
+        "Can I know the amount of my tuition fee?"
+      ],
+      "responses": [
+        "You can view the updated tuition fees for different courses, which are posted on the bulletin board located between the Accounting Office and Finance Office. Alternatively, you can directly inquire about them at the cashier's office."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sebasty_work",
+      "patterns": [
+        "How does Sebasty Work?",
+        "What is the functionality of Sebasty?"
+      ],
+      "responses": [
+        "Sebasty is powered by rechargeable batteries and can be controlled or not by CCC or an Admin. It is responsible for encoding and updating details about the school's latest activities."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "Available courses",
+        "What courses are offered?",
+        "List of courses"
+      ],
+      "responses": [
+        "The available courses at San Sebastian College - Recoletos de Cavite are:\n- BS Hospitality Management\n- BS Tourism Management\n- BSBA Financial Management\n- BSBA Marketing Management\n- BS Information Technology\n- BS Computer Engineering\n- BS Electronics Engineering\n- BS Industrial Engineering\n- BS Psychology\n- BS Accountancy\n- BS Communication\n- BS Nursing\n- BS Criminology"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salamat",
+      "patterns": [
+        "Maraming Salamat!",
+        "Salamat",
+        "mamats",
+        "Salamuch",
+        "Tenkyu",
+        "Salamat po",
+        "Maraming salamat po",
+        "Salamat sa tulong",
+        "Salamat sa tulong mo!",
+        "Salamat po sa tulong",
+        "salamat po sa tulong mo!"
+      ],
+      "responses": [
+        "Walang Anuman!",
+        "Walang Problema!",
+        "Masaya ako na matulungan ka!",
+        "Wala 'yon!",
+        "Walang Problema! Kung may iba ka pang katanungan o kailangan mo ng aking tulong, nandito lang ako at tutulungan kita!",
+        "Walang anuman! Kung may iba ka pang nais malaman, magtanong ka lamang sa akin! :D"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "paalam",
+      "patterns": [
+        "Paalam",
+        "Babay",
+        "Salamat at Paalam!",
+        "Mamaya na lang ulit"
+      ],
+      "responses": [
+        "Paalam!",
+        "Mag-iingat ka!",
+        "Mamaya ulit!",
+        "Sa uulitin~!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tanong",
+      "patterns": [
+        "May tanong ako",
+        "Pwede ba magtanong?",
+        "Maaari bang magtanong?",
+        "Pwede ko ba malaman ito",
+        "May itatanong sana ako",
+        "tanong ko lang",
+        "tanong"
+      ],
+      "responses": [
+        "Ano 'yon?",
+        "Ano ang iyong tanong?",
+        "Ano ang tanong mo?",
+        "Sige lang, pwede kang magtanong.",
+        "Magtanong ka lang :D",
+        "Ano ba ang tanong mo?",
+        "Ano ba ang iyong tanong?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tulong",
+      "patterns": [
+        "Pwede bang humingi ng tulong?",
+        "Patulong ako",
+        "tulong",
+        "Hingi ako tulong",
+        "Pa-help",
+        "Welp"
+      ],
+      "responses": [
+        "Ano ba ang  maitutulong ko?",
+        "Tutulungan kita sa abot ng aking makakaya :D",
+        "Syempre! Ano ba ang iyong kailangan?",
+        "Pwede! Ano ba ang kailangan mo?",
+        "Ano ba ang iyong kailangan?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "find_classrooms",
+      "patterns": [
+        "How do I find my classrooms?",
+        "Where are my classrooms?",
+        "I need help locating my classrooms",
+        "Can you help me find my classrooms?",
+        "How can I find where my classes are?",
+        "Finding classrooms",
+        "Locating my classrooms",
+        "Help with finding classrooms",
+        "Where can I see my class locations?",
+        "Finding my classes",
+        "Classroom"
+      ],
+      "responses": [
+        "Can you specify which exact classroom you are looking for?"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "hanapin_ang_mga_silid-aralan",
+      "patterns": [
+        "Paano ko mahanap ang mga silid-aralan ko?",
+        "Nasaan ang mga silid-aralan ko?",
+        "Kailangan ko ng tulong sa paghahanap ng mga silid-aralan ko",
+        "Pwede mo ba akong tulungan sa paghahanap ng mga silid-aralan ko?",
+        "Paano ko malalaman kung saan ang mga klase ko?",
+        "Paghahanap ng mga silid-aralan",
+        "Paghanap ng aking mga silid-aralan",
+        "Tulong sa paghahanap ng mga silid-aralan",
+        "Saan ko makikita ang lokasyon ng mga klase ko?",
+        "Paghahanap ng mga klase ko",
+        "Nasaan ang mga classroom ko?",
+        "Paano ko mahanap ang mga classroom ko?",
+        "Saan ko makikita ang mga classroom ko?"
+      ],
+      "responses": [
+        "Maaari mo bang tukuyin kung aling eksaktong silid-aralan ang hinahanap mo?"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "find_lab",
+      "patterns": [
+        "Where is the laboratory?",
+        "Can you help me find the laboratory?",
+        "I need to locate the laboratory.",
+        "Where can I find the lab?",
+        "Looking for the laboratory",
+        "Lab location",
+        "Lab",
+        "Laboratory"
+      ],
+      "responses": [
+        "Can you specify which exact laboratory you are looking for?"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "hanapin_ang_laboratoryo",
+      "patterns": [
+        "Nasaan ang laboratoryo?",
+        "Nasaan ang laboratory?",
+        "Pwede mo ba akong tulungan sa paghahanap ng laboratoryo?",
+        "Kailangan kong hanapin ang laboratoryo.",
+        "Saan ko mahahanap ang lab?",
+        "Naghahanap ng laboratoryo",
+        "Lokasyon ng laboratoryo"
+      ],
+      "responses": [
+        "Maaari mo bang tukuyin kung aling eksaktong laboratoryo ang hinahanap mo?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "find_office",
+      "patterns": [
+        "Where is the office?",
+        "Can you help me find the office?",
+        "I need to locate the office.",
+        "Where can I find the office?",
+        "Looking for the office",
+        "Office location",
+        "office"
+      ],
+      "responses": ["Can you specify which exact office you are looking for?"],
+      "context_set": ""
+    },
+    {
+      "tag": "hanapin_ang_opisina",
+      "patterns": [
+        "Nasaan ang opisina?",
+        "Pwede mo ba akong tulungan sa paghahanap ng opisina?",
+        "Kailangan kong hanapin ang opisina.",
+        "Saan ko mahahanap ang opisina?",
+        "Naghahanap ng opisina",
+        "Lokasyon ng opisina"
+      ],
+      "responses": [
+        "Maaari mo bang tukuyin kung aling eksaktong opisina ang hinahanap mo?"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "find_department",
+      "patterns": [
+        "Where is the department?",
+        "Can you help me find the department?",
+        "I need to locate the department.",
+        "Where can I find the department?",
+        "Looking for the department",
+        "Department location",
+        "Department"
+      ],
+      "responses": [
+        "Can you specify which exact department you are looking for?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hanapin_ang_departmento",
+      "patterns": [
+        "Nasaan ang departmento?",
+        "Nasaan ang department?",
+        "Pwede mo ba akong tulungan sa paghahanap ng departmento?",
+        "Kailangan kong hanapin ang departmento.",
+        "Saan ko mahahanap ang departmento?",
+        "Naghahanap ng departmento",
+        "Lokasyon ng departmento"
+      ],
+      "responses": [
+        "Maaari mo bang tukuyin kung aling eksaktong departmento ang hinahanap mo?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "find_lobby",
+      "patterns": [
+        "Where is the lobby?",
+        "Can you help me find the lobby?",
+        "I need to locate the lobby.",
+        "Where can I find the lobby?",
+        "Looking for the lobby",
+        "Lobby location",
+        "Lobby"
+      ],
+      "responses": ["Can you specify which exact lobby you are looking for?"],
+      "context_set": ""
+    },
+
+    {
+      "tag": "hanapin_ang_lobby",
+      "patterns": [
+        "Nasaan ang lobby?",
+        "Pwede mo ba akong tulungan sa paghahanap ng lobby?",
+        "Kailangan kong hanapin ang lobby.",
+        "Saan ko mahahanap ang lobby?",
+        "Naghahanap ng lobby",
+        "Lokasyon ng lobby",
+        "Saan yung Lobby?"
+      ],
+      "responses": [
+        "Maaari mo bang tukuyin kung aling eksaktong lobby ang hinahanap mo?"
+      ],
+      "context_set": ""
+    },
+
+    {
+      "tag": "find_restrooms",
+      "patterns": [
+        "Where are the restrooms located?",
+        "Can you help me find the restrooms?",
+        "I need to locate the restrooms.",
+        "Where can I find the restrooms?",
+        "Looking for the restrooms",
+        "Restroom location",
+        "Where is the restroom",
+        "CR",
+        "Wher is the CR?"
+      ],
+      "responses": [
+        "In San Sebastian College - Recoletos de Cavite, there are a total of __ restrooms, __ for the students, and __ for the faculty. On the ground floor, there is a restroom in St. Monica Building, in front of the canteen. There is also one on the ground floor of OLC building. In the SA Building, there is a male restroom between the stairs and the bookstore, while the female restroom is on the 2nd floor above the male restroom. You can also find restrooms on every floor, usually located in front of or at the side of the staircase on each floor."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hanapin_ang_mga_banyo",
+      "patterns": [
+        "Nasaan ang mga banyo?",
+        "Pwede mo ba akong tulungan sa paghahanap ng mga banyo?",
+        "Kailangan kong hanapin ang mga banyo.",
+        "Saan ko mahahanap ang mga banyo?",
+        "Naghahanap ng mga banyo",
+        "Lokasyon ng mga banyo",
+        "Saan pwede mag banyo?",
+        "Saan may banyo?",
+        "Saan may CR?"
+      ],
+      "responses": [
+        "Sa San Sebastian College - Recoletos de Cavite, mayroong kabuuang __ na banyo, __ para sa mga mag-aaral, at __ para sa mga guro. Sa ground floor, mayroong banyo sa St. Monica Building, sa harap ng kantina. Mayroon din sa ground floor ng OLC building. Sa SA Building, mayroong men's restroom sa pagitan ng hagdanan at bookstore, habang ang women's restroom ay nasa 2nd floor sa itaas ng men's restroom. Makikita mo rin ang mga banyo sa bawat palapag, karaniwan ay nasa harap o sa tabi ng hagdanan sa bawat palapag."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "access_library",
+      "patterns": [
+        "How do I access the library?",
+        "How do I check out books?",
+        "How can I borrow books from the library?",
+        "Library access process",
+        "Checking out books",
+        "go to Library"
+      ],
+      "responses": [
+        "The library, or the St. Thomas of Villanova Main Library, is located on the second floor of the EM Lobby. You can borrow books, just make sure to coordinate with the staff inside the library. Usually, a library access card is needed, but a school ID is also acceptable."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "pumasok_sa_aklatan",
+      "patterns": [
+        "Paano ko maa-access ang aklatan?",
+        "Paano ko maaaring makapagpahiram ng mga libro?",
+        "Paano ko maaaring makahiram ng mga libro mula sa aklatan?",
+        "Proseso ng pag-access sa aklatan",
+        "Paghiram ng mga libro",
+        "Paano humiram ng libro?",
+        "Paano pumunta sa Library?"
+      ],
+      "responses": [
+        "Ang aklatan, o ang St. Thomas of Villanova Main Library, ay matatagpuan sa ikalawang palapag ng EM Lobby. Maaari kang humiram ng mga libro, tiyaking makipag-ugnayan lamang sa mga tauhan sa loob ng aklatan. Karaniwan, isang library access card ang kailangan, ngunit tinatanggap din ang school ID."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "find_cafeteria",
+      "patterns": [
+        "Where is the cafeteria?",
+        "Where is the canteen",
+        "How do I purchase meals?",
+        "How can I buy food?",
+        "Cafeteria location",
+        "Meal purchase process",
+        "Cafeteria"
+      ],
+      "responses": [
+        "The cafeteria or canteen is in the St. Monica Building at the side of the EM Lobby. To buy food or any available items in the canteen, you need to go first to the cashier in the SA Building to exchange regular money for tokens, which are used to pay in the canteen. The exchange rate is 1 peso to 1 peso token. Then you need to choose what you want to buy and have the staff write your receipt before paying and getting your food."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "hanapin_ang_cafeteria",
+      "patterns": [
+        "Nasaan ang cafeteria?",
+        "Nasaan ang canteen?",
+        "Paano ko maaaring bumili ng pagkain?",
+        "Paano ko mabibili ang pagkain?",
+        "Lokasyon ng cafeteria",
+        "Proseso ng pagbili ng pagkain",
+        "Paano bumili sa canteen?"
+      ],
+      "responses": [
+        "Ang cafeteria o kantina ay matatagpuan sa St. Monica Building sa tabi ng EM Lobby. Upang bumili ng pagkain o anumang available na mga item sa kantina, kailangan mong pumunta sa cashier (SA Building) upang ipalit ang regular na pera sa mga token, na ginagamit upang magbayad sa kantina. Ang rate ng palit ay 1 piso sa 1 piso na token. Pagkatapos, kailangan mong pumili kung ano ang gusto mong bilhin at ipakita sa staff ang iyong resibo bago magbayad at kunin ang iyong pagkain."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "access_wifi",
+      "patterns": [
+        "Can I access Wi-Fi within the school?",
+        "How can I access Wi-Fi?",
+        "Wi-Fi access process",
+        "Accessing Wi-Fi in the school",
+        "Free wifi"
+      ],
+      "responses": [
+        "The ICT office will send you an email (if you still don’t have an account) that contains a username and password solely for you. Then you need to go to the ICT office and tell them the MAC address of your device (ask them for help if you don’t know what it is) so they can connect your device to the Wi-Fi. After these steps, you can use the internet anytime you want. Note: You can only use the device that is registered with the ICT office, so if you want to use the internet with another device, don’t forget to ask the ICT office to allow your device to connect."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "wifi",
+      "patterns": [
+        "Pwede ba akong mag-access ng Wi-Fi sa loob ng paaralan?",
+        "Pwede ba akong mag-access ng Wi-Fi sa loob ng school?",
+        "Paano ko maa-access ang Wi-Fi?",
+        "Proseso ng pag-access sa Wi-Fi",
+        "Pano kumonnect sa wifi?",
+        "Pamamaraan ng pag-access sa Wi-Fi sa paaralan"
+      ],
+      "responses": [
+        "Ang opisina ng ICT ay magpapadala sa iyo ng isang email (kung wala ka pa ring account) na naglalaman ng isang username at password na para lamang sa iyo. Pagkatapos, kailangan mong pumunta sa opisina ng ICT at sabihin sa kanila ang MAC address ng iyong device (humingi ng tulong sa kanila kung hindi mo alam kung ano ito) upang mai-konekta nila ang iyong device sa Wi-Fi. Pagkatapos ng mga hakbang na ito, maaari mong gamitin ang internet anumang oras na gusto mo. Tandaan: Maaari mong gamitin lamang ang device na naka-rehistro sa opisina ng ICT, kaya kung nais mong gamitin ang internet sa ibang device, huwag kalimutan na hingin sa opisina ng ICT na payagan ang iyong device na kumonekta."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "designated_areas",
+      "patterns": [
+        "Are there designated areas for specific grade levels or student groups?",
+        "Senior high school building",
+        "College department building",
+        "Where are the designated areas for different grade levels?",
+        "Designated areas for student groups",
+        "Specific areas for different grade levels"
+      ],
+      "responses": [
+        "The St. Augustine Building is designated for the Senior High School department, while the College department occupies the St. Ezekiel Moreno (EM), St. Joseph (SJ), Our Lady of Consolation (OLC), and St. Monica Building."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "tinukoy_na_mga_lugar",
+      "patterns": [
+        "May mga tinukoy bang lugar para sa mga espesipikong antas ng grade o mga grupo ng mag-aaral?",
+        "Saan matatagpuan ang mga tinukoy na lugar para sa iba't ibang antas ng grade?",
+        "Tinukoy na mga lugar para sa mga grupo ng mag-aaral",
+        "Espesipikong mga lugar para sa iba't ibang antas ng grade"
+      ],
+      "responses": [
+        "Ang St. Augustine Building ay para sa Senior High School department, habang ang College department naman ay naroroon sa St. Ezekiel Moreno (EM), St. Joseph (SJ), Our Lady of Consolation (OLC), at St. Monica Building."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "emergency_access",
+      "patterns": [
+        "How do I access school security or administrative offices in case of emergencies?",
+        "Emergency",
+        "What should I do during emergencies to reach school security or administrative offices?",
+        "In case of emergency, how can I contact school security or administrative offices?",
+        "Emergency procedures for accessing school offices",
+        "Accessing school offices during emergencies",
+        "Emergency protocol for reaching school security or administrative offices",
+        "Steps to access school security or administrative offices during emergencies"
+      ],
+      "responses": [
+        "There are always security guards at the entrance of the school, and sometimes guards also roam around the school. They wear uniforms, so you can identify them easily. Each floor is also equipped with a fire alarm, fire extinguisher, and an emergency cabinet in case of fire or emergency. The clinic is on the ground floor of the SA building, next to the stairs near the bookstore. But in case of emergency and you can’t reach them, you can ask your teachers and other non-teaching personnel for help."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "equipment_procedures",
+      "patterns": [
+        "What are the procedures for using school equipment or resources?",
+        "How can I borrow school equipment or resources?",
+        "Using school equipment or resources procedures",
+        "What steps do I need to follow to use school equipment or resources?",
+        "Procedures for borrowing school equipment or resources",
+        "How do I request to use school equipment or resources?",
+        "Steps to follow when using school equipment or resources"
+      ],
+      "responses": [
+        "If the equipment you mean are tables, chairs, lighting, or speakers, you can ask for them in the _________, if you want to borrow or use speakers, mics, or a projector, you can ask for them in the library. If you want to use the laboratories, you need to ask the laboratory custodians. Lobbies and multipurpose halls can also be used, but you need to properly request access by submitting a request letter to the Office of Student Affairs and Services."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "quiet_spaces",
+      "patterns": [
+        "Are there quiet spaces available for studying or relaxation?",
+        "Where can I find quiet areas for studying or relaxation?",
+        "Quiet spaces for studying or relaxation",
+        "What areas in the school are designated for quiet studying or relaxation?",
+        "Studying or relaxation areas",
+        "Can you recommend quiet places for studying or relaxation?",
+        "Where should I go if I need a quiet place to study or relax?"
+      ],
+      "responses": [
+        "The best option for this is the library, St. Thomas of Villanova Main Library located in the EM Lobby, which not only contains books but also has long chairs, monoblocs, and big sofas you can use. It is well air-conditioned and quiet, and the staff not only allows you to read but also to sleep inside the library, but eating and drinking inside are not allowed."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "emergency_access",
+      "patterns": [
+        "Paano ko ma-a-access ang opisina ng paaralan o opisina ng administrasyon sa oras ng mga emerhensiya?",
+        "Ano ang dapat kong gawin sa mga emerhensiya para maabot ang opisina ng paaralan o opisina ng administrasyon?",
+        "Sa oras ng emerhensiya, paano ko makakontak ang opisina ng paaralan o opisina ng administrasyon?",
+        "Mga prosedyur sa emerhensiya para ma-access ang mga opisina ng paaralan",
+        "Paano makakapasok sa mga opisina ng paaralan sa panahon ng mga emerhensiya?",
+        "Protocol sa emerhensiya para maabot ang opisina ng paaralan o opisina ng administrasyon",
+        "Mga hakbang sa pag-access sa opisina ng paaralan o opisina ng administrasyon sa oras ng mga emerhensiya"
+      ],
+      "responses": [
+        "Laging may mga security guard sa entrance ng paaralan, at minsan ay naglalakad rin ang mga guard sa buong paaralan. Sila ay naka-uniporme kaya madaling makikilala. Bawat palapag ay mayroon ding fire alarm, fire extinguisher, at isang emergency cabinet sakaling may sunog o emergency. Ang clinic ay nasa ground floor ng gusali ng SA building, malapit sa hagdan malapit sa bookstore. Ngunit sa oras ng emergency at hindi mo sila maabot, maaari mong tanungin ang iyong mga guro at iba pang hindi guro para sa tulong."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "equipment_procedures",
+      "patterns": [
+        "Ano ang mga prosedurang dapat sundin sa paggamit ng kagamitan o mga sanggunian ng paaralan?",
+        "Paano ko maaring humiram ng kagamitan o mga sanggunian ng paaralan?",
+        "Mga prosedurang panggamit ng kagamitan o mga sanggunian ng paaralan",
+        "Anong mga hakbang ang dapat kong sundin para magamit ang kagamitan o mga sanggunian ng paaralan?",
+        "Mga prosedurang panghiram ng kagamitan o mga sanggunian ng paaralan",
+        "Paano ko maaring humiling na magamit ang kagamitan o mga sanggunian ng paaralan?",
+        "Mga hakbang na dapat sundin sa paggamit ng kagamitan o mga sanggunian ng paaralan"
+      ],
+      "responses": [
+        "Kung ang kagamitan na tinutukoy mo ay mga mesa, upuan, ilaw, o mga speaker, maaari mong hiramin ang mga ito sa _________, kung nais mong humiram o gumamit ng mga speaker, mics, o projector, maaari mong hiramin ang mga ito sa aklatan. Kung nais mong gamitin ang mga laboratories, kailangan mong tanungin ang mga custodian ng laboratoryo. Maaari rin gamitin ang mga lobbies at multipurpose halls para sa mga events, ngunit kailangan mong maayos na humiling ng pahintulot sa pamamagitan ng pagpasa ng sulat ng kahilingan sa Office of Student Affairs and Services."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "quiet_spaces",
+      "patterns": [
+        "Mayroon bang tahimik na mga lugar para sa pag-aaral?",
+        "Saan makikita ang mga tahimik na lugar para sa pag-aaral?",
+        "Tahimik na mga lugar para sa pag-aaral",
+        "Anong mga lugar sa paaralan ang itinakda para sa tahimik na pag-aaral?",
+        "Mga lugar para sa pag-aaral",
+        "Maaari mo bang irekomenda ang mga tahimik na lugar para sa pag-aaral o pag papahinga?",
+        "Saan ako dapat pumunta kung kailangan ko ng tahimik na lugar para mag-aral o magpahinga?"
+      ],
+      "responses": [
+        "Ang pinaka maganda na lugar para dito ay ang Library, St. Thomas of Villanova Main Library na matatagpuan sa EM building, na hindi lamang naglalaman ng mga libro kundi mayroon din itong mahabang mga lamesa, monoblocs, at malalaking sofa na maaari mong gamitin. Ito ay maayos na air-conditioned at tahimik, at pinapayagan ka ng mga staff na hindi lamang magbasa kundi pati na rin matulog sa loob ng aklatan, ngunit hindi pinapayagan ang pagkain at pag-inom sa loob."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "navigate_buildings",
+      "patterns": [
+        "How do I navigate between different buildings or wings of the school?",
+        "What's the best way to get around different buildings or wings of the school?",
+        "Navigating between school buildings or wings",
+        "Getting around the school's different buildings or wings",
+        "Directions between school buildings or wings",
+        "How can I move from one building to another within the school?",
+        "Traveling between school buildings or wings"
+      ],
+      "responses": [
+        "There is an elevator in the school located in the OLC building, but if it is not working, you need to walk and take the stairs."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "designated_study_areas",
+      "patterns": [
+        "Are there designated areas for study or group work?",
+        "Where can I find designated study areas?",
+        "Study areas for individual or group work",
+        "Where should I go for quiet study or group collaboration?",
+        "Designated spots for studying or group activities",
+        "Places to study or work on group projects",
+        "Areas allocated for studying or group discussions"
+      ],
+      "responses": [
+        "St. Thomas of Villanova Main Library located in the EM Lobby, which not only contains books but also has long chairs, monoblocs, and big sofas you can use. It is well air-conditioned and quiet, and the staff not only allows you to read but also to sleep inside the library, but eating and drinking inside are not allowed. You can study there alone or in a group, but too much noise is not allowed. EM Lobby is also a good choice, but it is more crowded, especially during lunchtime and break time. EM Lobby on the ground floor is equipped with tables and chairs, making it a good spot for studying without noise restrictions."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "navigate_buildings",
+      "patterns": [
+        "Paano ko maa-access ang iba't ibang gusali ng paaralan?",
+        "Anong pinakamagandang paraan para makalipat sa iba't ibang gusali ng paaralan?",
+        "Pag-navigate sa pagitan ng mga gusaling paaralan",
+        "Pamamaraan sa paglipat sa pagitan ng mga gusali ng paaralan",
+        "Direksyon sa pagitan ng mga gusali o mga pakpak ng paaralan",
+        "Paano ako makakalipat mula sa isang gusali patungo sa isa pa sa loob ng paaralan?",
+        "Paglalakbay sa pagitan ng mga gusali paaralan"
+      ],
+      "responses": [
+        "Mayroong elevator sa paaralan na matatagpuan sa OLC building, ngunit kung hindi ito gumagana, kailangan mong maglakad at umakyat sa hagdanan."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "designated_study_areas",
+      "patterns": [
+        "Mayroon bang itinakdang lugar para sa pag-aaral o pangkatang gawain?",
+        "Saan ko maaaring makita ang mga itinakdang lugar para sa pag-aaral?",
+        "Lugar para sa pag-aaral para sa indibidwal o pangkatang gawain",
+        "Saan dapat ako pumunta para sa tahimik na pag-aaral o pangkatang gawain?",
+        "Mga espasyong itinakda para sa pag-aaral o pangkatang gawain",
+        "Mga lugar para mag-aral o magtrabaho sa mga pangkatang proyekto",
+        "Mga lugar na alokado para sa pag-aaral o pangkatang diskusyon"
+      ],
+      "responses": [
+        "Ang pinakamaganda na opsyon para dito ay ang aklatan, St. Thomas of Villanova Main Library na matatagpuan sa EM building, na hindi lamang naglalaman ng mga libro kundi mayroon din itong mahabang mga upuan, monoblocs, at malalaking sofa na maaari mong gamitin. Ito ay maayos na air-conditioned at tahimik, at pinapayagan ka ng mga staff na hindi lamang magbasa kundi pati na rin matulog sa loob ng aklatan, ngunit hindi pinapayagan ang pagkain at pag-inom sa loob. Maaari kang mag-aral doon mag-isa o sa isang grupo, ngunit hindi pinapayagan ang sobrang ingay. Ang EM Lobby rin ay isang magandang pagpipilian, ngunit mas maraming tao, lalo na sa oras ng tanghalian at pahinga. Ang EM Lobby sa ground floor ay may mga mesa at upuan, kaya ito ay isang magandang lugar para mag-aral nang walang mga paghihigpit sa ingay."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "computer_lab_access",
+      "patterns": [
+        "How do I access computer labs or technology resources?",
+        "Comlab",
+        "Computer laboratory",
+        "What are the procedures for using computer labs or technology resources?",
+        "Accessing computer labs or technology resources",
+        "Procedures for using technology resources in the computer labs",
+        "How can I use the computer laboratories or technology resources?",
+        "Getting access to computer labs or technology resources",
+        "How do I use the technology equipment in the computer labs?"
+      ],
+      "responses": [
+        "Usually, students are only allowed to enter the Computer Laboratories during class hours. You can use the computers during class hours, as well as the laboratory equipment, when the teacher is inside the room. You can also go to the ICT office to ask for help regarding technology resources."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "em_lobby_location",
+      "patterns": [
+        "Where is the EM Lobby?",
+        "Where can I find the EM Lobby?",
+        "Location of the EM Lobby",
+        "EM Lobby's whereabouts",
+        "How do I get to the EM Lobby?",
+        "Directions to the EM Lobby",
+        "Where is the EM Building?"
+      ],
+      "responses": [
+        "Starting from here in front of the Center for Strategic Communications and Marketing, you just need to walk across the SA building or the court, and you will arrive at the EM building. Take the first part of the stairs and turn right to reach the other floors. A five-storey building, it features the St. Ezekiel Moreno Lobby, serving as the primary venue for the school's major activities. The St. Thomas of Villanova Main Library is located on the second floor. The third floor houses the Computer Laboratories, while the Mass Communication and Crime Laboratories are on the fourth floor. The fifth floor is dedicated to the HRM Mini-Hotel, Bar Laboratory, and HRM Kitchen. Additionally, the CRCW (Center for Research and Creative Works) is situated on the fourth floor."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "paano_makakapasok_sa_kompyuter_lab",
+      "patterns": [
+        "Paano ko maa-access ang mga computer lab?",
+        "Ano ang mga hakbang para magamit ang mga computer lab?",
+        "Pag-access sa mga computer lab",
+        "Mga prosedyur para magamit ang mga technology sa computer lab",
+        "Paano ko magagamit ang mga computer laboratories?",
+        "Pagkuha ng access sa mga computer lab o mga teknolohiyang sanggunian",
+        "Paano ko gagamitin ang mga kagamitan sa teknolohiya sa mga computer lab?"
+      ],
+      "responses": [
+        "Karaniwan, ang mga mag-aaral ay pinapayagang pumasok lamang sa mga Computer Laboratories sa oras ng klase. Maaari mong gamitin ang mga computer sa oras ng klase, pati na rin ang mga kagamitan sa laboratoryo, kapag ang guro ay nasa loob ng silid. Maaari ka ring pumunta sa tanggapan ng ICT upang humingi ng tulong tungkol sa mga technological resources."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "lokasyon_ng_em_lobby",
+      "patterns": [
+        "Nasaan ang EM Lobby?",
+        "Saan ko mahahanap ang EM Lobby?",
+        "Lokasyon ng EM Lobby",
+        "Saan matatagpuan ang EM Lobby?",
+        "Paano ako makakarating sa EM Lobby?",
+        "Direksyon papunta sa EM Lobby",
+        "Nasaan ang EM Building?"
+      ],
+      "responses": [
+        "Mula dito sa harap ng Center for Strategic Communications and Marketing, kailangan mong maglakad papunta sa SA building o sa court, at makakarating ka sa gusali ng EM. Tumaas sa unang bahagi ng hagdanan at pumanhik sa kanan upang marating ang iba pang mga palapag. Isang limang-palapag na gusali ito, kung saan matatagpuan ang St. Ezekiel Moreno Lobby, na nagsisilbing pangunahing lugar para sa mga pangunahing aktibidad ng paaralan. Matatagpuan ang St. Thomas of Villanova Main Library sa ikalawang palapag. Ang ikatlong palapag ay mayroong Computer Laboratories, habang ang mga Laborataryo ng Mass Communication at Crime ay nasa ikaapat na palapag. Ang ikalimang palapag ay inilaan para sa HRM Mini-Hotel, Bar Laboratory, at HRM Kitchen. Bukod dito, matatagpuan ang CRCW (Center for Research and Creative Works) sa ikaapat na palapag."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sj_building_location",
+      "patterns": [
+        "Where is the SJ Building?",
+        "Where can I find the SJ Building?",
+        "Location of the SJ Building",
+        "SJ Building's whereabouts",
+        "How do I get to the SJ Building?",
+        "Directions to the SJ Building"
+      ],
+      "responses": [
+        "Assuming that you are here in front of the Center for Strategic Communications and Marketing, SJ Building or St. Joseph is on the other side of the school, not to be confused with the EM Building or Ezekiel Moreno Building and Saint Monica Building, which are in the same direction. Among the three buildings, SJ is the farthest. The building contains the Physics and Electronics & Communications Engineering Labs, along with the barracks. Classrooms are on the 2nd to 4th floor."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "st_monica_building_location",
+      "patterns": [
+        "Where is the St. Monica Building?",
+        "Where can I find the St. Monica Building?",
+        "Location of the St. Monica Building",
+        "St. Monica Building's whereabouts",
+        "How do I get to the St. Monica Building?",
+        "Directions to the St. Monica Building"
+      ],
+      "responses": [
+        "Assuming that you are here in front of the Center for Strategic Communications and Marketing, St. Monica is on the other side of the school. It is in the middle of the EM building and SJ building. There is a staircase leading to this building at the side of the canteen and in the middle of the EM Lobby. The tallest building on the campus, it's six stories tall includes a penthouse and rooftop. You'll find the school's canteen, audio-visual rooms, and various labs including the speech, micro, and Computer Engineering labs in this building. The third floor is home to the Instructional Media Center."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "lokasyon_ng_sj_building",
+      "patterns": [
+        "Nasaan ang SJ Building?",
+        "Saan ko mahahanap ang SJ Building?",
+        "Lokasyon ng SJ Building",
+        "Saan matatagpuan ang SJ Building?",
+        "Paano ako makakarating sa SJ Building?",
+        "Direksyon papunta sa SJ Building",
+        "Nasaan ang SJ Building?"
+      ],
+      "responses": [
+        "Sa palagay na andito ka sa harap ng Center for Strategic Communications and Marketing, ang SJ Building o St. Joseph ay nasa kabilang dulo ng paaralan, huwag itong ikalito sa EM Building o St. Ezekiel Moreno Building at St. Monica Building, na nasa parehong direksyon. Sa tatlong gusali, ang SJ ang pinakamalayo. Ang gusali ay naglalaman ng Physics at Electronics & Communications Engineering Labs, kasama ang barracks. Ang mga silid-aralan ay nasa 2nd hanggang 4th na palapag."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "lokasyon_ng_st_monica_building",
+      "patterns": [
+        "Nasaan ang St. Monica Building?",
+        "Saan ko mahahanap ang St. Monica Building?",
+        "Lokasyon ng St. Monica Building",
+        "Saan matatagpuan ang St. Monica Building?",
+        "Paano ako makakarating sa St. Monica Building?",
+        "Direksyon papunta sa St. Monica Building",
+        "Nasaan ang St. Monica Building?"
+      ],
+      "responses": [
+        "Sa palagay na andito ka sa harap ng Center for Strategic Communications and Marketing, ang St. Monica building ay nasa kabilang dulo ng paaralan. Ito ay nasa gitna ng EM building at SJ building. Mayroong hagdanan na patungo sa gusaling ito sa gilid ng kantina at sa gitna ng EM Lobby. Ang pinakamataas na gusali sa paaralan, anim na palapag ito kasama na ang penthouse at rooftop. Makikita mo ang kantina ng paaralan, audio-visual rooms, at iba't ibang mga laboratoryo kasama na ang speech, micro, at Computer Engineering labs sa gusaling ito. Ang ikatlong palapag ay para sa Instructional Media Center."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "st_monica_building_description",
+      "patterns": [
+        "What is the St. Monica Building?",
+        "St. Monica",
+        "St. Monica building",
+        "What does the St. Monica Building contain?",
+        "Description of the St. Monica Building",
+        "Features of the St. Monica Building",
+        "St. Monica Building's purpose"
+      ],
+      "responses": [
+        "The tallest building on the campus, it's six stories tall and includes a penthouse and rooftop. You'll find the school's canteen, audio-visual rooms, and various labs including the speech, micro, and Computer Engineering labs in this building. The third floor is home to the Instructional Media Center."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "olc_building_location",
+      "patterns": [
+        "Where is the Our Lady of Consolation Building?",
+        "OLC",
+        "OLC building",
+        "Where can I find the Our Lady of Consolation Building?",
+        "Location of the Our Lady of Consolation Building",
+        "Our Lady of Consolation Building's whereabouts",
+        "How do I get to the Our Lady of Consolation Building?",
+        "Directions to the Our Lady of Consolation Building"
+      ],
+      "responses": [
+        "If you are here in front of the Center for Strategic Communications and Marketing, OLC or Our Lady of Consolation building is on the left side of the EM, SJ, and St. Monica building. Walk until you reach the benches in the EM building, and on the left side, there are stairs leading to the OLC building. The Nursing Skills Laboratory and Program office are here. Additionally, it accommodates the Mechanical Engineering, ITM, and Chemistry Laboratories. The school's elevator is also located in this building."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "paglalarawan_ng_st_monica_building",
+      "patterns": [
+        "Ano ang St. Monica Building?",
+        "Ano ang nilalaman ng St. Monica Building?",
+        "Paglalarawan ng St. Monica Building",
+        "Mga tampok ng St. Monica Building",
+        "Layunin ng St. Monica Building",
+        "Ano ang St. Monica Building?",
+        "Ano ang nilalaman ng St. Monica Building?"
+      ],
+      "responses": [
+        "Ang pinakamataas na gusali sa paaralan, anim na palapag ito kasama na ang penthouse at rooftop. Makikita mo ang kantina ng paaralan, audio-visual rooms, at iba't ibang mga laboratoryo kasama na ang speech, micro, at Computer Engineering labs sa gusaling ito. Ang ikatlong palapag ay tirahan ng Instructional Media Center."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "lokasyon_ng_olc_building",
+      "patterns": [
+        "Nasaan ang Our Lady of Consolation Building?",
+        "Saan ko mahahanap ang Our Lady of Consolation Building?",
+        "Lokasyon ng Our Lady of Consolation Building",
+        "Kinaroroonan ng Our Lady of Consolation Building",
+        "Paano ako makakarating sa Our Lady of Consolation Building?",
+        "Direksyon papunta sa Our Lady of Consolation Building",
+        "Nasaan ang Our Lady of Consolation Building?"
+      ],
+      "responses": [
+        "Kung andito ka sa harap ng Center for Strategic Communications and Marketing, ang OLC o Our Lady of Consolation building ay nasa kaliwa ng EM, SJ, at St. Monica building. Maglakad hanggang sa makarating ka sa mga upuan sa EM building, at sa kaliwa, mayroong hagdanan patungo sa gusaling OLC. Narito ang Nursing Skills Laboratory at Program office. Bukod dito, ito rin ang nagtatampok ng Mechanical Engineering, ITM, at Chemistry Laboratories. Ang elevator ng paaralan ay matatagpuan din sa gusaling ito."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sa_building_location",
+      "patterns": [
+        "Where is the SA Building?",
+        "Where can I find the SA Building?",
+        "Location of the SA Building",
+        "SA Building's whereabouts",
+        "How do I get to the SA Building?",
+        "Directions to the SA Building"
+      ],
+      "responses": [
+        "SA Building or Saint Augustine Building is located here exactly, this building is called the SA Building assuming that you are in front of the Center for Strategic Communications and Marketing. It is referred to as the Main/Administrative building; this structure serves as the hub for the school's administrative offices. Additionally, it accommodates various facilities including the Chapel, Multi-Purpose Hall, an audio-visual room, bookstore, classrooms, and laboratories such as the Psychology Laboratory, Science, and Experimental Laboratories. Moreover, it is home to the Senior High School department of the institution."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "deans_office_location",
+      "patterns": [
+        "Where is the Dean’s Office?",
+        "Where can I find the Dean’s Office?",
+        "Location of the Dean’s Office",
+        "Dean’s Office's whereabouts",
+        "How do I get to the Dean’s Office?",
+        "Directions to the Dean’s Office",
+        "deans office"
+      ],
+      "responses": [
+        "The Dean’s Office is located on the 2nd floor of this building, which is the SA building. Take the stairs and turn right. There are labels on the top of the doors; the door of the dean has the sign ‘Office of the College Dean’."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "lokasyon_ng_sa_building",
+      "patterns": [
+        "Nasaan ang SA Building?",
+        "Saan ko mahahanap ang SA Building?",
+        "Lokasyon ng SA Building",
+        "Kinaroroonan ng SA Building",
+        "Paano ako makakarating sa SA Building?",
+        "Direksyon papunta sa SA Building",
+        "Nasaan ang SA Building?"
+      ],
+      "responses": [
+        "Ang SA Building o St. Augustine Building ay matatagpuan dito mismo, tinatawag na SA Building ang gusaling ito sa palagay na ikaw ay nasa harap ng Center for Strategic Communications and Marketing. Ito ay tinatawag na Main/Administrative building; ang istrakturang ito ay naglilingkod bilang sentro para sa mga tanggapan ng paaralan. Bukod dito, ito rin ay nagtatampok ng iba't ibang pasilidad kabilang ang Kapilya, Multi-Purpose Hall, isang audio-visual room, tindahan ng mga libro, silid-aralan, at mga laboratoryo tulad ng Psychology Laboratory, Science, at Experimental Laboratories. Bukod dito, ito rin ang tahanan ng Senior High School department ng institusyon."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "lokasyon_ng_opisina_ng_dekano",
+      "patterns": [
+        "Nasaan ang opisina ng Dekano?",
+        "Saan ko mahahanap ang opisina ng Dekano?",
+        "Lokasyon ng opisina ng Dekano",
+        "Kinaroroonan ng opisina ng Dekano",
+        "Paano ako makakarating sa opisina ng Dekano?",
+        "Direksyon papunta sa opisina ng Dekano",
+        "Nasaan ang opisina ng Dekano?"
+      ],
+      "responses": [
+        "Matatagpuan ang opisina ng Dean sa ikalawang palapag ng gusaling ito, na ang tawag ay SA building. Umakyat sa hagdanan at pumanhik sa kanan. May mga label sa tuktok ng mga pinto; ang pinto ng dean ay may tanda ng 'Office of the College Dean'."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "em_lobby_location",
+      "patterns": [
+        "Where is the EM Lobby?",
+        "Where can I find the EM Lobby?",
+        "Location of the EM Lobby",
+        "EM Lobby's whereabouts",
+        "How do I get to the EM Lobby?",
+        "Directions to the EM Lobby"
+      ],
+      "responses": [
+        "EM lobby or the St. Ezekiel Moreno Lobby is located on the ground floor of the EM building. It is across from the SA Lobby where you are currently at."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "office_hours",
+      "patterns": ["Office hours?"],
+      "responses": [
+        "As of 2024, office hours start at 9:00 am and end at 4:30 pm."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "lokasyon_ng_em_lobby",
+      "patterns": [
+        "Nasaan ang EM Lobby?",
+        "Saan ko mahahanap ang EM Lobby?",
+        "Lokasyon ng EM Lobby",
+        "Kinaroroonan ng EM Lobby",
+        "Paano ako makakarating sa EM Lobby?",
+        "Direksyon papunta sa EM Lobby"
+      ],
+      "responses": [
+        "Ang EM lobby o ang St. Ezekiel Moreno Lobby ay matatagpuan sa ground floor ng gusaling EM. Ito ay nasa tapat ng SA Lobby kung saan ka naroroon."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "oras_ng_opisina",
+      "patterns": [
+        "Oras ng opisina?",
+        "Anong oras bukas ang opisina?",
+        "Anong oras ang opisina bukas?"
+      ],
+      "responses": [
+        "Sa taong 2024, ang oras ng opisina ay nagsisimula ng 9:00 ng umaga at nagtatapos ng 4:30 ng hapon."
+      ],
+      "context_set": ""
+    }
+  ]
+}

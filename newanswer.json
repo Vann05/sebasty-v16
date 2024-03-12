@@ -1,0 +1,61 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey"],
+      "responses": ["Hello! How can I assist you today?"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you!", "Thanks a lot"],
+      "responses": ["You're welcome!", "No problem!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "See you later", "Bye"],
+      "responses": ["Goodbye! Take care."]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Help", "I need assistance"],
+      "responses": ["Sure, what do you need help with?"]
+    },
+    {
+      "tag": "developer",
+      "patterns": ["Who developed this?", "Who created this?"],
+      "responses": [
+        "Sebasty was developed by a team led by Jurado, Luig, Brillantes, Gaylon, and Jaguit."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where is San Sebastian College - Recoletos de Cavite located?"
+      ],
+      "responses": [
+        "Main Campus: Manila-Cavite Road, Sta. Cruz, Cavite City, 4100, Philippines"
+      ]
+    },
+    {
+      "tag": "tuition",
+      "patterns": ["How can I check my tuition fee?"],
+      "responses": [
+        "You can view the updated tuition fees for different courses at the cashier's office."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": ["What courses are offered at SSCRdC?"],
+      "responses": [
+        "SSCRdC offers various courses including BS Hospitality Management, BS Tourism Management, BSBA Financial Management, and more."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": ["Where can I give my feedback about the school?"],
+      "responses": [
+        "You can give your feedback by visiting the school's official website or contacting the administration."
+      ]
+    }
+  ]
+}
